@@ -16,3 +16,8 @@ jobs:
           heroku_app_name: ${{secrets.HEROKU_APP_NAME}} #Must be unique in Heroku
           heroku_email: ${{secrets.HEROKU_EMAIL}}
           buildpack: "https://github.com/heroku/heroku-buildpack-nodejs.git"
+          # Set this to true if you don't want to use --force when switching branches
+          dontuseforce: true
+          # Set this to true if you don't want to automatically create the Heroku app
+          dontautocreate: true
+          # team: ""
